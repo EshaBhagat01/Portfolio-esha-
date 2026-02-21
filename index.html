@@ -1,234 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Esha Gunvant Bhagat</title>
-    <link rel="stylesheet" href="style.css"
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        header {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 30px 10px;
-        }
-
-        header h1 {
-            margin: 5px;
-        }
-
-        nav {
-            background-color: #4CAF50;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            background-color: white;
-            margin: 20px auto;
-            padding: 20px;
-            width: 85%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        h2 {
-            margin-bottom: 15px;
-        }
-
-        ul {
-            list-style-type: disc;
-            text-align: left;
-            display: inline-block;
-        }
-
-        input, textarea {
-            width: 80%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #6091b2;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #5585af;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #222;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esha Bhagat | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <section class="hero">
-
-  <div class="hero-text">
-
-    <h1>Hi, I'm Esha Bhagat</h1>
-
-    <h3>Frontend Developer | Software Engineer Aspirant</h3>
-
-    <p>I build modern and responsive websites.</p>
-
-    <a href="#projects" class="btn">View Projects</a>
-
-    <a href="resume.pdf" class="btn">Download Resume</a>
-
-  </div>
-
-  <div class="hero-img">
-  <img src="esha.jpg" alt="Esha">
-</div>
-
-
-
-</section>
-</header>
-
+<!-- NAVBAR -->
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#internship">Internship</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
+  <h2>Esha Bhagat</h2>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Skills</li>
+    <li>Projects</li>
+    <li>Contact</li>
+  </ul>
 </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p> <section class="about">
-
-
-
-<p>
-I am Esha Gunavant Bhagat, a Computer Science Engineering student and aspiring Software Engineer. 
-I have strong knowledge of HTML, CSS, JavaScript, and Python. I am currently learning Data Science 
-and improving my problem-solving skills.
-
-I am passionate about building responsive websites and software applications. My goal is to become 
-a professional Software Engineer and contribute to innovative and real-world projects.
-
-I am actively looking for internship and entry-level opportunities to gain practical experience and grow my career.
-</p>
-
-</section></p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-card fade-in">
+    <img src="esha.jpg" alt="Esha Bhagat">
+    <h1>Hello, I'm Esha Bhagat</h1>
+    <p>Frontend Developer | CSE Student</p>
+    <div class="hero-btns">
+      <a href="todo-app.png" class="btn btn-gradient-blue">View Project</a>
+      <a href="resume.pdf" class="btn btn-gradient-green" target="_blank">Download Resume</a>
+    </div>
+  </div>
 </section>
 
-<section id="skills">
-    <h2>Technical Skills</h2>
-
-<ul>
-
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Python</li>
-<li>C Programming</li>
-<li>C++</li>
-<li>Data Science (Beginner)</li>
-<li>Git & GitHub</li>
-
-</ul>
-
-</section>
-    </ul>
+<!-- ABOUT -->
+<section class="fade-in">
+  <h2>About Me</h2>
+  <p>I am a frontend developer skilled in HTML, CSS, JavaScript. I build modern, responsive, professional websites with dark theme and smooth animations.</p>
 </section>
 
-<section id="internship">
-    <h2>Internship </h2>
-    <section class="internship">
-
-<p>
-Web Development Intern (Training)
-
-Currently undergoing training in Web Development focused on HTML, CSS, and JavaScript. 
-Learning to build responsive and professional websites and improving frontend development skills.
-</p>
-
-</section>
+<!-- SKILLS -->
+<section class="fade-in">
+  <h2>My Skills</h2>
+  <div class="skills">
+    <span class="skill-btn">HTML</span>
+    <span class="skill-btn">CSS</span>
+    <span class="skill-btn">JavaScript</span>
+    <span class="skill-btn">C</span>
+    <span class="skill-btn">C++</span>
+  </div>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-
-<p>
-Portfolio Website  
-Designed and developed a personal portfolio website using HTML and CSS to showcase skills, education, and projects.
-
-</p>
-
-<p>
-College Event Management System (DBMS Project)  
-Developed a database system to manage college events, registrations, and participants using MySQL.
-</p>
-
-</section>
+<!-- PROJECTS -->
+<section class="fade-in">
+  <h2>My Projects</h2>
+  <div class="project-card">
+    <h3>Advanced Todo App</h3>
+    <p>A modern task management app using HTML, CSS, JS with add, delete, complete features. Fully responsive with dark theme.</p>
+    <a href="todo-app.png" class="btn btn-gradient-blue">Open Project</a>
+  </div>
 </section>
 
-<section id="education">
-    <h2>Education</h2>
-    
+<!-- CONTACT -->
+<footer class="fade-in">
+  <h2>Contact Me</h2>
+  <p>Email: eshabhagat63@gmail.com</p>
+  <p>GitHub: eshabhagat01</p>
+</footer>
 
-<p>
-Bachelor of Computer Science Engineering  
-Dr. Rajendra Gode Institute of Technology, Amravati  
-2022 – 2026
-</p>
+<script>
+  // Fade-in on scroll
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) return;
+      entry.target.classList.add('appear');
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
 
-<p>
-CGPA: 8+ (Current)
-</p>
-
-</section>
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-
-<p>Email: eshabhagat63@gmail.com</p>
-
-<p>GitHub: github.com/EshaBhagat01</p>
-
-<p>LinkedIn: linkedin.com/in/esha-bhagat</p>
-
-</section>
-        
-        
-</section>
-
-<footer>
-    © 2026 Esha Gunavant Bhagat
-</footer> 
+  faders.forEach(fader => { appearOnScroll.observe(fader); });
+</script>
 
 </body>
 </html>
