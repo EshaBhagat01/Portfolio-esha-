@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Esha Bhagat | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esha Bhagat | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <h2>Esha Bhagat</h2>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Skills</li>
-    <li>Projects</li>
-    <li>Contact</li>
-  </ul>
-</nav>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Esha Bhagat</h2>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-card fade-in">
-    <img src="esha.jpg" alt="Esha Bhagat">
-    <h1>Hello, I'm Esha Bhagat</h1>
-    <p>Frontend Developer | CSE Student</p>
-    <div class="hero-btns">
-      <a href="todo-app.png" class="btn btn-gradient-blue">View Project</a>
-      <a href="resume.pdf" class="btn btn-gradient-green" target="_blank">Download Resume</a>
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-card">
+      <img src="esha.jpg" alt="Esha Bhagat">
+      <h1>Hello, I'm <span class="name-highlight">Esha Bhagat</span></h1>
+      <p><span id="typed"></span></p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Project</a>
+        <a href="resume.pdf" class="btn btn-outline">Download Resume</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ABOUT -->
-<section class="fade-in">
-  <h2>About Me</h2>
-  <p>I am a frontend developer skilled in HTML, CSS, JavaScript. I build modern, responsive, professional websites with dark theme and smooth animations.</p>
-</section>
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="section-card">
+      <h2>About Me</h2>
+      <p>I am a frontend developer skilled in HTML, CSS, JavaScript. I build modern, responsive, and professional websites with smooth animations and dark theme.</p>
+    </div>
+  </section>
 
-<!-- SKILLS -->
-<section class="fade-in">
-  <h2>My Skills</h2>
-  <div class="skills">
-    <span class="skill-btn">HTML</span>
-    <span class="skill-btn">CSS</span>
-    <span class="skill-btn">JavaScript</span>
-    <span class="skill-btn">C</span>
-    <span class="skill-btn">C++</span>
-  </div>
-</section>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-card">
+      <h2>Skills</h2>
+      <div class="skills-badges">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>C</span>
+        <span>C++</span>
+      </div>
+    </div>
+  </section>
 
-<!-- PROJECTS -->
-<section class="fade-in">
-  <h2>My Projects</h2>
-  <div class="project-card">
-    <h3>Advanced Todo App</h3>
-    <p>A modern task management app using HTML, CSS, JS with add, delete, complete features. Fully responsive with dark theme.</p>
-    <a href="todo-app.png" class="btn btn-gradient-blue">Open Project</a>
-  </div>
-</section>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-card">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Advanced Todo App</h3>
+        <p>A modern task management app using HTML, CSS, JS with add, delete, complete features. Fully responsive with dark theme.</p>
+        <a href="todo-app.png" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
 
-<!-- CONTACT -->
-<footer class="fade-in">
-  <h2>Contact Me</h2>
-  <p>Email: eshabhagat63@gmail.com</p>
-  <p>GitHub: eshabhagat01</p>
-</footer>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-card">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-<script>
-  // Fade-in on scroll
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
-  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-    entries.forEach(entry => {
-      if(!entry.isIntersecting) return;
-      entry.target.classList.add('appear');
-      appearOnScroll.unobserve(entry.target);
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ['Frontend Developer', 'CSE Student', 'Web Enthusiast'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
     });
-  }, appearOptions);
-
-  faders.forEach(fader => { appearOnScroll.observe(fader); });
-</script>
+  </script>
 
 </body>
 </html>
